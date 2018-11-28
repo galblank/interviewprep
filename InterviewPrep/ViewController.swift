@@ -13,15 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        pairFinder()
     }
-    func pairFinder() {
-        let n = 9
-        let ar = [10,20,20,10,10,30,50,10,20]
+    func pairFinder(number: Int, array: [Int]) -> Int {
         var pairs = 0
-        var pairsArray = ar
-        for i in 0..<n where pairsArray[i] > -1 {
-            for j in i+1..<n {
+        var pairsArray = array
+        for i in 0..<number where pairsArray[i] > -1 {
+            for j in i+1..<number {
                 if pairsArray[i] == pairsArray[j] {
                     pairs += 1
                     pairsArray[i] = -1
@@ -30,7 +27,7 @@ class ViewController: UIViewController {
                 }
             }
         }
-        print(pairs)
+        return pairs
     }
 
 }
