@@ -12,8 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
+
     func pairFinder(number: Int, array: [Int]) -> Int {
         var pairs = 0
         var pairsArray = array
@@ -28,6 +28,26 @@ class ViewController: UIViewController {
             }
         }
         return pairs
+    }
+
+    func countingValleys(n: Int, s: String) -> Int {
+        let steps = Array(s)
+        var valleys = 0
+        var level = 0
+        var prevLevel = 0
+        for step in steps {
+            if step == "U" {
+                prevLevel = level
+                level += 1
+            } else {
+                prevLevel = level
+                level -= 1
+            }
+            if level == 0 && prevLevel < 0 {
+                valleys += 1
+            }
+        }
+        return valleys
     }
 
 }

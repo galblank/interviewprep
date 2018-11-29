@@ -25,6 +25,15 @@ class InterviewPrepTests: XCTestCase {
         let n = 9
         let ar = [10,20,20,10,10,30,50,10,20]
         XCTAssert(mainVC.pairFinder(number: n, array: ar) == 3)
+
+        /// valley finder
+        /*
+         -/\
+            \    /
+             \/\/
+        */
+        XCTAssert(mainVC.countingValleys(n: 8, s: "UDDDUDUU") == 1)
+
     }
 
     func testPerformanceExample() {
