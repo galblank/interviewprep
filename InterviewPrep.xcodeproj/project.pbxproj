@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEA3847E21B192FD0064D72A /* jumping-on-the-clouds.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CEA3847B21B192FD0064D72A /* jumping-on-the-clouds.pdf */; };
+		CEA3847F21B192FD0064D72A /* sock-merchant.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CEA3847C21B192FD0064D72A /* sock-merchant.pdf */; };
+		CEA3848021B192FD0064D72A /* counting-valleys.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CEA3847D21B192FD0064D72A /* counting-valleys.pdf */; };
+		CEA3848221B1935A0064D72A /* repeated-string.pdf in Resources */ = {isa = PBXBuildFile; fileRef = CEA3848121B1935A0064D72A /* repeated-string.pdf */; };
 		CEA4D8F321AEC95A0006C2F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4D8F221AEC95A0006C2F8 /* AppDelegate.swift */; };
 		CEA4D8F521AEC95A0006C2F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4D8F421AEC95A0006C2F8 /* ViewController.swift */; };
 		CEA4D8F821AEC95A0006C2F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA4D8F621AEC95A0006C2F8 /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CEA3847B21B192FD0064D72A /* jumping-on-the-clouds.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "jumping-on-the-clouds.pdf"; sourceTree = "<group>"; };
+		CEA3847C21B192FD0064D72A /* sock-merchant.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "sock-merchant.pdf"; sourceTree = "<group>"; };
+		CEA3847D21B192FD0064D72A /* counting-valleys.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "counting-valleys.pdf"; sourceTree = "<group>"; };
+		CEA3848121B1935A0064D72A /* repeated-string.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "repeated-string.pdf"; sourceTree = "<group>"; };
 		CEA4D8EF21AEC95A0006C2F8 /* InterviewPrep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewPrep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA4D8F221AEC95A0006C2F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA4D8F421AEC95A0006C2F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,9 +82,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEA3847A21B192FD0064D72A /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				CEA3848121B1935A0064D72A /* repeated-string.pdf */,
+				CEA3847B21B192FD0064D72A /* jumping-on-the-clouds.pdf */,
+				CEA3847C21B192FD0064D72A /* sock-merchant.pdf */,
+				CEA3847D21B192FD0064D72A /* counting-valleys.pdf */,
+			);
+			path = Challenges;
+			sourceTree = "<group>";
+		};
 		CEA4D8E621AEC95A0006C2F8 = {
 			isa = PBXGroup;
 			children = (
+				CEA3847A21B192FD0064D72A /* Challenges */,
 				CEA4D8F121AEC95A0006C2F8 /* InterviewPrep */,
 				CEA4D90621AEC95B0006C2F8 /* InterviewPrepTests */,
 				CEA4D91121AEC95B0006C2F8 /* InterviewPrepUITests */,
@@ -230,7 +250,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEA4D8FD21AEC95B0006C2F8 /* LaunchScreen.storyboard in Resources */,
+				CEA3847F21B192FD0064D72A /* sock-merchant.pdf in Resources */,
 				CEA4D8FA21AEC95B0006C2F8 /* Assets.xcassets in Resources */,
+				CEA3847E21B192FD0064D72A /* jumping-on-the-clouds.pdf in Resources */,
+				CEA3848221B1935A0064D72A /* repeated-string.pdf in Resources */,
+				CEA3848021B192FD0064D72A /* counting-valleys.pdf in Resources */,
 				CEA4D8F821AEC95A0006C2F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

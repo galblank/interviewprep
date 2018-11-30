@@ -24,15 +24,18 @@ class InterviewPrepTests: XCTestCase {
     func testExample() {
         let n = 9
         let ar = [10,20,20,10,10,30,50,10,20]
+        //challenge location - Challenges/sock-merchant.pdf
         XCTAssert(mainVC.pairFinder(number: n, array: ar) == 3)
 
         /// valley finder
-        /*
-         -/\
-            \    /
-             \/\/
-        */
+        //challenge location - Challenges/counting-valleys.pdf
         XCTAssert(mainVC.countingValleys(n: 8, s: "UDDDUDUU") == 1)
+
+        //challenge location - Challenges/jumping-on-the-clouds.pdf
+        XCTAssert(mainVC.jumpingOnClouds(cloudsArray: [0,0,0,1,0,0]) == 3)
+        XCTAssert(mainVC.jumpingOnClouds(cloudsArray: [0,0,1,0,0,1,0]) == 4)
+
+        //challenge location - Challenges/repeated-string.pdf
 
     }
 

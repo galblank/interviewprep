@@ -50,5 +50,19 @@ class ViewController: UIViewController {
         return valleys
     }
 
+    func jumpingOnClouds(cloudsArray: [Int]) -> Int {
+        var minSteps = 0
+        var i = 0
+        while i < cloudsArray.count - 1 {
+            if i + 2 < cloudsArray.count && cloudsArray[i + 2] == 0 {
+                i += 2
+            } else {
+                i += 1
+            }
+            minSteps += 1
+        }
+        return minSteps
+    }
+
 }
 
