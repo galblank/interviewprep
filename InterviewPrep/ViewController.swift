@@ -12,7 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let arr = [1,10,5,1,0,6]
+        let tree = BinaryTree(array: arr)
     }
+
 
     func pairFinder(number: Int, array: [Int]) -> Int {
         var pairs = 0
